@@ -9,6 +9,7 @@ import OurGalleryPage from "./pages/OurGalleryPage"
 import Animation2D from "./pages/Animation";
 import Illustrations from "./pages/Illustrations";
 import ComicsStorybook from "./pages/Comics-storybooks";
+import CharacterDesign from  "./pages/Character-design"
 
 
 const App: React.FC = () => {
@@ -23,6 +24,7 @@ const App: React.FC = () => {
         <Route path="/Contact" element={<ContactPage />} />
         <Route path="/animation" element={<Animation2D />} />
         <Route path="/Illustrations" element={<Illustrations />} />
+        <Route path="/character-design" element={<CharacterDesign />} />
         <Route path="/comics-story-books" element={<ComicsStorybook />} />
       </Routes>
     </Router>
