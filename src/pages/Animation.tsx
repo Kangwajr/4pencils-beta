@@ -18,16 +18,16 @@ const galleryItems: GalleryItem[] = [
     title: "Character Design",
     category: "2D Animation",
     type: "image",
-    url: "/4pencil-utils1/ServicesImages/pose 3 1.svg", // Updated to YouTube embed URL
+    url: "4pencil-utils1/ServicesImages/pose 3 1.svg", // Updated to YouTube embed URL
     height: "h-64",
   },
   {
     id: 2,
-    title: "3D Animation Reel",
-    category: "3D Animation",
+    title: "2D Animation Reel",
+    category: "",
     type: "video",
     url: "https://www.youtube.com/embed/O4ZzwJCNOAY",
-    thumbnail: "/4pencil-utils/MIXKASAMWA0001.png",
+    thumbnail: "4pencil-utils1/ServicesImages/homes stealing.svg",
     height: "h-96",
   },
   {
@@ -41,10 +41,10 @@ const galleryItems: GalleryItem[] = [
   
   {
     id: 3,
-    title: "Character Design",
+    title: "",
     category: "2D Animation",
     type: "image",
-    url: "/4pencil-utils/page 4.jpg",
+    url: "4pencil-utils1/ServicesImages/homes stealing.svg",
     height: "h-64",
   },
   {
@@ -86,7 +86,7 @@ const animation: React.FC = () => {
                 <div
                   key={item.id}
                   onClick={() => setSelectedItem(item)}
-                  className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer"
+                  className="relative overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer"
                 >
                   {item.type === "video" ? (
                     <img

@@ -27,12 +27,12 @@ function team() {
       role: "Lead Animatic/Storyboard Artist",
       image: "/team/tai.jpeg",
     },
-    {
-      id: 5,
-      name: "Salome P Arts",
-      role: "Illustrator/Concept",
-      image: "/team/salome.jpeg",
-    },
+    // {
+    //   id: 5,
+    //   name: "Salome P Arts",
+    //   role: "Illustrator/Concept",
+    //   image: "/team/salome.jpeg",
+    // },
     {
       id: 6,
       name: "Numba.E.Kabila",
@@ -64,11 +64,12 @@ function team() {
   const centerMember = teamMembers.find((member) => member.isCenter);
 
   return (
-    <div className="min-h-screen bg-black/20 p-8" style={{ fontFamily: "'', sans-serif",backgroundImage: "url('/studio1.jpeg')" }}>
+   
+<div className="min-h-screen p-8" style={{ fontFamily: "'', sans-serif",backgroundImage: "url('/studio1.jpeg')" }}>
       <div className="max-w-7xl mx-auto">
         <Navbar />
 
-        <div className=" flex flex-col lg:flex-row items-center lg:items-start lg:space-x-16">
+        <div className="  flex flex-col lg:flex-row items-center lg:items-start lg:space-x-16">
           {/* Text Section */}
           <div className="flex-1 space-y-6 py-28 text-center lg:text-left mb-16 lg:mb-0">
             <h1 className="text-6xl text-sky-500 font-bold leading-tight">
@@ -141,6 +142,8 @@ function team() {
         </div>
       </div>
     </div>
+
+    
   );
 }
 

@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
         <div className="border-t border-gray-900/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-[#FFD700]">© 2024 wyo. All rights reserved.</p>
+            <p className="text-[#FFD700]">© 2024 4pencils. All rights reserved.</p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <Link to="https://www.facebook.com/NukecreativeSpace" target="_blank" rel="noopener noreferrer">
               <Facebook className="h-5 w-5 text-sky-500 hover:text-sky-400 cursor-pointer transition-colors" />

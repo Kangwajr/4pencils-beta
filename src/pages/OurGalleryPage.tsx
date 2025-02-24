@@ -19,7 +19,7 @@ const galleryItems: GalleryItem[] = [
     category: "2D Animation",
     type: "video",
     url: "https://www.youtube.com/embed/ctEyIELC9UQ", // Updated to YouTube embed URL
-    thumbnail: "/Gallery/microbial 1.svg",
+    thumbnail: "4pencil-utils1/Gallery/microbial 1.svg",
     height: "h-64",
   },
   {
@@ -28,7 +28,7 @@ const galleryItems: GalleryItem[] = [
     category: "3D Animation",
     type: "video",
     url: "https://www.youtube.com/embed/O4ZzwJCNOAY",
-    thumbnail: "/Gallery/maggies 1.svg",
+    thumbnail: "4pencil-utils1/Gallery/maggies 1.svg",
     height: "h-96",
   },
   {
@@ -36,7 +36,7 @@ const galleryItems: GalleryItem[] = [
     title: " ",
     category: "3D Animation",
     type: "image",
-    url: " /4pencil-utils/Super Boobs2.png",
+    url: "4pencil-utils1/ILLUSTRA/19 1.svg",
     height: "h-96",
   },
  
@@ -63,7 +63,7 @@ const galleryItems: GalleryItem[] = [
     category: "2D Animation",
     type: "video",
     url: "https://www.youtube.com/embed/O9U4IGB0v3k",
-    thumbnail: "/Gallery/med-search 1.svg",
+    thumbnail: "4pencil-utils1/Gallery/med-search 1.svg",
     height: "h-64",
   },
   {
@@ -159,7 +159,6 @@ const galleryItems: GalleryItem[] = [
   // Add other items here...
 ];
 
-
 const Gallery: React.FC = () => {
   const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
 
@@ -174,10 +173,10 @@ const Gallery: React.FC = () => {
       <div className="min-h-screen py-24 bg-black px-4 sm:px-6 lg:px-8" style={{ fontFamily: "'', sans-serif" }}>
         <Navbar />
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-6xl font-bold text-sky-500 ">
+          <h2 className="text-6xl font-extrabold text-sky-500 ">
             Our Gallery
           </h2>
-          <p className="mt-4 text-3xl text-[#FFD700]">
+          <p className="mt-4 text-xl text-[#FFD700]">
             Explore our diverse collection of artwork, animations, and videos
           </p>
         </div>

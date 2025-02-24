@@ -24,7 +24,7 @@ const services = [
   {
     name: "Character Design",
     icon: <Palette className="w-5 h-5" />,
-    path: "/Character-design",
+    path: "/character-design",
   },
   
   {
