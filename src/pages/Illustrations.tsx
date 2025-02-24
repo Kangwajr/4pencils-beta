@@ -51,7 +51,7 @@ const illustration: React.FC = () => {
 
   return (
     <>
-      <div className="min-h-screen py-24 bg-black px-4 sm:px-6 lg:px-8" style={{ fontFamily: "'Wonderkids', sans-serif" }}>
+      <div className="min-h-screen py-24 bg-black px-4 sm:px-6 lg:px-8" style={{ fontFamily: "'', sans-serif" }}>
         <Navbar />
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-6xl font-bold text-sky-500 ">

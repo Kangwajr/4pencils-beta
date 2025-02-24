@@ -15,7 +15,7 @@ const OurGallery = () => {
 
   return (
     <div className="bg-black/20 px-0"> 
-    <div className="py-20  inset-0  bg-cover bg-center bg-fixed" style={{ fontFamily: "'Wonderkids', sans-serif", backgroundImage: "url('/4pencil-utils1/ServicesImages/girls_final_.svg')", }}>
+    <div className="py-20  inset-0  bg-cover bg-center bg-fixed" style={{ fontFamily: "'', sans-serif", backgroundImage: "url('/4pencil-utils1/ServicesImages/girls_final_.svg')", }}>
       <div className="relative px-4">
         <Swiper
           effect="coverflow"

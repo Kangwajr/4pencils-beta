@@ -64,7 +64,7 @@ function team() {
   const centerMember = teamMembers.find((member) => member.isCenter);
 
   return (
-    <div className="min-h-screen bg-black/20 p-8" style={{ fontFamily: "'Wonderkids', sans-serif",backgroundImage: "url('/studio1.jpeg')" }}>
+    <div className="min-h-screen bg-black/20 p-8" style={{ fontFamily: "'', sans-serif",backgroundImage: "url('/studio1.jpeg')" }}>
       <div className="max-w-7xl mx-auto">
         <Navbar />
 

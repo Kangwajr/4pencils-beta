@@ -22,6 +22,12 @@ const services = [
     path: "/illustrations",
   },
   {
+    name: "Character Design",
+    icon: <Palette className="w-5 h-5" />,
+    path: "/Character-design",
+  },
+  
+  {
     name: "Comics & Story Books",
     icon: <BookOpen className="w-5 h-5" />,
     path: "/comics-story-books",

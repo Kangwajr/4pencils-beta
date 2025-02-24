@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-2xl text-sky-500 py-12" style={{ fontFamily: "'Wonderkids', sans-serif" }}>
+    <footer className="bg-black text-2xl text-sky-500 py-12" style={{ fontFamily: "'', sans-serif" }}>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>

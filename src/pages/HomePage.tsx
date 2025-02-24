@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen" style={{ fontFamily: "'Wonderkids', sans-serif" }}>
+    <div className="min-h-screen" style={{ fontFamily: "'', sans-serif" }}>
       <Navbar />
       <Hero />
       <OurGallery />

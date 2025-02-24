@@ -2,11 +2,6 @@ import React, { useState } from "react";
 import {
   ChevronLeft,
   ChevronRight,
-  Box,
-  Film,
-  Book,
-  Palette,
-  Layers,
 } from "lucide-react";
 
 const services = [
