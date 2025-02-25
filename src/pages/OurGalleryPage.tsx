@@ -113,7 +113,7 @@ const galleryItems: GalleryItem[] = [
     title: "Illustration",
     category: "",
     type: "image",
-    url: "/4pencil-utils/page_5.jpg",
+    url: "4pencil-utils1/4 pencils illustrations/albino 1.svg",
     height: "h-96",
   },
   {
@@ -126,8 +126,8 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 4,
-    title: "4pencil-utils1/3D REN/renders/boy 1 1 1.svg",
-    category: "",
+    title: "",
+    category: "2D animation",
     type: "image",
     url: "4pencil-utils1/ILLUSTRA/19 1.svg",
     height: "h-96",

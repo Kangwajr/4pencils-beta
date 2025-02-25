@@ -112,9 +112,9 @@ const AboutPage = () => {
       </section>
 
       {/* Values Section */}
-      <section className="relative py-20 bg-black/35">
+      <section className="relative py-20">
         <img
-          src="/4pencil-utils1/4 pencils illustrations/hero kids rich.jpg"
+          src="4pencil-utils1/ILLUSTRA/4 pencils illustrations/hero kids rich 1.svg"
           alt="Background"
           className="absolute inset-0 w-full h-[950px] bg-center  object-cover opacity-90"
         />
@@ -139,10 +139,10 @@ const AboutPage = () => {
       </section>
 
       {/* Location Section */}
-      <section className="relative py-20 " style={{
-      backgroundImage: "url('/4pencil-utils1/3D REN/renders/JAMES0336.png')",
+      <section className="relative py-40" style={{
+      backgroundImage: "url('/4pencil-utils1/3D REN/renders/JAMES0336.png')"
     }}>
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-6xl font-bold text-white mb-4">
               Visit Our Studio

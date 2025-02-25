@@ -17,7 +17,7 @@ const Contact = () => {
           <source src="/4pencil-utils1/3D REN/renders/Missing Smile2.png" type="video/mp4" />
         </video> */}
          <img
-          src="4pencil-utils1/3D REN/renders/Missing Smile2.png"
+          src="4pencil-utils1/3D REN/renders/Missing Smile2 1 1.svg"
           alt="Background"
           className="absolute inset-0 w-full h-[690px] bg-center  object-cover opacity-90"
         />
