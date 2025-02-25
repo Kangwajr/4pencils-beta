@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Navbar from "../components/Navbar";
+import logo from '4pencil-utils1/Gallery/microbial 1.svg';
+
 
 interface GalleryItem {
   id: number;
@@ -71,7 +73,7 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "",
+    url: "4pencil-utils1/3D REN/renders/pose 2 1 1.svg",
     height: "h-64",
   },
   {
@@ -79,7 +81,7 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: " ",
+    url: "4pencil-utils1/3D REN/renders/JAMES0336 1 1.svg",
     height: "h-96",
   },
   {
@@ -87,7 +89,7 @@ const galleryItems: GalleryItem[] = [
     title: "3D Character",
     category: "",
     type: "image",
-    url: "",
+    url: "4pencil-utils1/3D REN/renders/JAMES0147 1 1.svg",
     height: "h-96",
   },
   {
@@ -95,7 +97,7 @@ const galleryItems: GalleryItem[] = [
     title: "3D Character",
     category: "",
     type: "image",
-    url: "",
+    url: "4pencil-utils1/3D REN/renders/chi2 1.svg",
     height: "h-96",
   },
   {
@@ -119,23 +121,15 @@ const galleryItems: GalleryItem[] = [
     title: "Illustration",
     category: "",
     type: "image",
-    url: "public/4pencil-utils1/ILLUSTRA/Nira1.svg",
+    url: "4pencil-utils1/ILLUSTRA/Nira1.svg",
     height: "h-96",
   },
   {
     id: 4,
-    title: "",
+    title: "4pencil-utils1/3D REN/renders/boy 1 1 1.svg",
     category: "",
     type: "image",
-    url: "public/4pencil-utils1/ILLUSTRA/19 1.svg",
-    height: "h-96",
-  },
-  {
-    id: 4,
-    title: "3D Character",
-    category: "",
-    type: "image",
-    url: "",
+    url: "4pencil-utils1/ILLUSTRA/19 1.svg",
     height: "h-96",
   },
   {
@@ -143,7 +137,7 @@ const galleryItems: GalleryItem[] = [
     title: "3D Character",
     category: "",
     type: "image",
-    url: "",
+    url: "4pencil-utils1/3D REN/renders/pose 5 2 1.svg",
     height: "h-96",
   },
   {
@@ -151,10 +145,33 @@ const galleryItems: GalleryItem[] = [
     title: "3D Character",
     category: "",
     type: "image",
-    url: "",
+    url: "4pencil-utils1/3D REN/renders/pose 8 2 1.svg",
     height: "h-96",
   },
-  
+  {
+    id: 4,
+    title: "3D Character",
+    category: "",
+    type: "image",
+    url: "4pencil-utils1/3D REN/renders/seg 1 1.svg",
+    height: "h-96",
+  },
+  {
+    id: 4,
+    title: "3D Character",
+    category: "",
+    type: "image",
+    url: "4pencil-utils1/3D REN/renders/untitled 1 1.svg",
+    height: "h-96",
+  },
+  {
+    id: 4,
+    title: "3D Character",
+    category: "",
+    type: "image",
+    url: "4pencil-utils1/3D REN/renders/space_girl_gv002_0040 1 1.svg",
+    height: "h-96",
+  },
   
   // Add other items here...
 ];
