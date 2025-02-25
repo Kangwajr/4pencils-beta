@@ -52,11 +52,19 @@ const projects = [
   },
   {
     title: "Catholic Relief Services",
-    image: "/4pencil-utils1/ILLUSTRA/CAHOLIC RELIEF 1.svg",
+    image: "4pencil-utils1/ILLUSTRA/11 9.svg",
+    rating: 5.0,
+    reviews: 73,
+    description: "we had the privilege of transforming the CIF+ Learning Brief, Job Aid, and Pocket Guide through strategic graphic design and illustration, enhancing visual appeal and user accessibility.",
+  },
+  {
+    title: "Catholic Relief Services",
+    image: "4pencil-utils1/ILLUSTRA/catholic1.svg",
     rating: 5.0,
     reviews: 73,
     description: "We collaborated with Catholic Relief Services - Zambia Country Program to illustrate visuals for the Inclusive, Positive Parenting manual. The focus was on depicting children with cerebral palsy and other differing abilities. The illustrations aimed to contribute to a comprehensive resource supporting positive parenting for families facing unique challenges. This project reflects my commitment to creative contributions that foster inclusivity and support diverse communities.",
   },
+
 ];
 
 const Projects = () => {

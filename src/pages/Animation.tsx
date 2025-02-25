@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Navbar from "../components/Navbar";
 
-interface GalleryItem {
+interface animationItem {
   id: number;
   title: string;
   category: string;
@@ -12,7 +12,7 @@ interface GalleryItem {
   thumbnail?: string;
 }
 
-const galleryItems: GalleryItem[] = [
+const animationItems: animationItem[] = [
   {
     id: 1,
     title: "Character Design",
@@ -60,7 +60,7 @@ const galleryItems: GalleryItem[] = [
 ];
 
 const animation: React.FC = () => {
-  const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
+  const [selectedItem, setSelectedItem] = useState<animationItem | null>(null);
 
   const closeModal = () => {
     setSelectedItem(null);
@@ -82,7 +82,7 @@ const animation: React.FC = () => {
         <div className="mt-12">
           <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
             <Masonry gutter="20px">
-              {galleryItems.map((item) => (
+              {animationItems.map((item) => (
                 <div
                   key={item.id}
                   onClick={() => setSelectedItem(item)}

@@ -71,7 +71,7 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "/projects/storybook.jpeg",
+    url: "",
     height: "h-64",
   },
   {
@@ -79,7 +79,7 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: " /projects/lil-girl.jpeg",
+    url: " ",
     height: "h-96",
   },
   {
@@ -87,7 +87,7 @@ const galleryItems: GalleryItem[] = [
     title: "3D Character",
     category: "",
     type: "image",
-    url: "/projects/character.jpeg",
+    url: "",
     height: "h-96",
   },
   {
@@ -95,7 +95,7 @@ const galleryItems: GalleryItem[] = [
     title: "3D Character",
     category: "",
     type: "image",
-    url: "/4pencil-utils/MIXKASAMWA0001.png",
+    url: "",
     height: "h-96",
   },
   {
@@ -103,7 +103,7 @@ const galleryItems: GalleryItem[] = [
     title: "3D Character",
     category: "",
     type: "image",
-    url: "/4pencil-utils/SuperDad.png",
+    url: "/4pencil-utils1/ILLUSTRA/CAHOLIC RELIEF 1.svg",
     height: "h-96",
   },
   {
@@ -119,7 +119,15 @@ const galleryItems: GalleryItem[] = [
     title: "Illustration",
     category: "",
     type: "image",
-    url: "/4pencil-utils/Illustration.jpg",
+    url: "public/4pencil-utils1/ILLUSTRA/Nira1.svg",
+    height: "h-96",
+  },
+  {
+    id: 4,
+    title: "",
+    category: "",
+    type: "image",
+    url: "public/4pencil-utils1/ILLUSTRA/19 1.svg",
     height: "h-96",
   },
   {
@@ -127,7 +135,7 @@ const galleryItems: GalleryItem[] = [
     title: "3D Character",
     category: "",
     type: "image",
-    url: "/4pencil-utils/seg.png",
+    url: "",
     height: "h-96",
   },
   {
@@ -135,15 +143,7 @@ const galleryItems: GalleryItem[] = [
     title: "3D Character",
     category: "",
     type: "image",
-    url: "/4pencil-utils/page_2.jpg",
-    height: "h-96",
-  },
-  {
-    id: 4,
-    title: "3D Character",
-    category: "",
-    type: "image",
-    url: "/4pencil-utils/page_1.jpg",
+    url: "",
     height: "h-96",
   },
   {

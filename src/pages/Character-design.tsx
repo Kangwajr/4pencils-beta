@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Navbar from "../components/Navbar";
 
-interface GalleryItem {
+interface characterDesignItems {
   id: number;
   title: string;
   category: string;
@@ -12,7 +12,7 @@ interface GalleryItem {
   thumbnail?: string;
 }
 
-const characterDesignItem: GalleryItem[] = [
+const characterDesignItem: characterDesignItems[] = [
   {
     id: 1,
     title: "Character Design",
@@ -60,7 +60,7 @@ const characterDesignItem: GalleryItem[] = [
 ];
 
 const characterDesign: React.FC = () => {
-  const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
+  const [selectedItem, setSelectedItem] = useState<characterDesignItems | null>(null);
 
   const closeModal = () => {
     setSelectedItem(null);
@@ -75,7 +75,7 @@ const characterDesign: React.FC = () => {
             Character Design
           </h2>
           <p className="mt-4 text-3xl text-[#FFD700]">
-            Explore our diverse collection of artwork, animations, and videos
+            Explore our diverse collection of designs
           </p>
         </div>
 
