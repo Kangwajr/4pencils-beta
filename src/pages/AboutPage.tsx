@@ -114,7 +114,7 @@ const AboutPage = () => {
       {/* Values Section */}
       <section className="relative py-20">
         <img
-          src="4pencil-utils1/ILLUSTRA/4 pencils illustrations/hero kids rich 1.svg"
+          src="4pencil-utils1/4pencilsIllustrations/herokidsrich.svg"
           alt="Background"
           className="absolute inset-0 w-full h-[950px] bg-center  object-cover opacity-90"
         />
@@ -140,7 +140,7 @@ const AboutPage = () => {
 
       {/* Location Section */}
       <section className="relative py-40" style={{
-      backgroundImage: "url('/4pencil-utils1/3D REN/renders/JAMES0336.png')"
+      backgroundImage: "url('/4pencil-utils1/3D-REN/renders/JAMES0.svg')"
     }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">

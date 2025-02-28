@@ -5,14 +5,14 @@ export const galleryItems = [
     id: 0,
     title: "2D animations",
     type: "image",
-    url: "/4pencil-utils1/ServicesImages/house stuff 1.svg",
+    url: "4pencil-utils1/ServicesImages/housestuff1.svg",
     galleryUrl: "/animation",
   },
   {
     id: 1,
     title: "3D animations",
     type: "image",
-    url: "/4pencil-utils1/ServicesImages/3D.svg",
+    url: "4pencil-utils1/3D-REN/renders/pose2.svg",
     galleryUrl: "/animation",
   },
   {
@@ -26,14 +26,14 @@ export const galleryItems = [
     id: 2,
     title: "Character Design",
     type: "video",
-    url: "/4pencil-utils1/ServicesImages/pose 5 1.svg",
+    url: "4pencil-utils1/ServicesImages/guy0.svg",
     galleryUrl: "/character-design",
   },
   {
     id: 3,
     title: "comics/Story books",
     type: "image",
-    url: "4pencil-utils/page 4.jpg",
+    url: "4pencil-utils/page4.jpg",
     galleryUrl: "/comics-storybook",
   },
 ];

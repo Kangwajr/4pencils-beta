@@ -8,9 +8,9 @@ const HeroVideo = () => {
         loop
         playsInline
         className="absolute inset-0 w-full min-h-max object-cover"
-        poster="/4pencil-utils1/thumbnails/4pencils-hero-thumbnail.svg"
+        // poster="/4pencil-utils1/thumbnails/4pencils-hero-thumbnail.svg"
       >
-        <source src="/videos/Comp 1_1.mp4" type="video/mp4" />
+        <source src="/videos/Comp1_1.mp4" type="video/mp4" />
       </video>
     </>
   );

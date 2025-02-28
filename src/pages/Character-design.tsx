@@ -18,7 +18,7 @@ const characterDesignItem: characterDesignItems[] = [
     title: "Character Design",
     category: "2D Animation",
     type: "image",
-    url: "4pencil-utils1/ServicesImages/pose 3 1.svg", // Updated to YouTube embed URL
+    url: "4pencil-utils1/3D-REN/renders/boy.svg", // Updated to YouTube embed URL
     height: "h-64",
   },
   {
@@ -27,7 +27,7 @@ const characterDesignItem: characterDesignItems[] = [
     category: "",
     type: "video",
     url: "https://www.youtube.com/embed/O4ZzwJCNOAY",
-    thumbnail: "4pencil-utils1/ServicesImages/homes stealing.svg",
+    thumbnail: "4pencil-utils1/3D-REN/renders/space_girl1.svg",
     height: "h-96",
   },
   {
@@ -35,7 +35,7 @@ const characterDesignItem: characterDesignItems[] = [
     title: "Character Design",
     category: "2D Animation",
     type: "image",
-    url: "/4pencil-utils1/ServicesImages/homes stealing.svg",
+    url: "4pencil-utils1/ServicesImages/guy0.svg",
     height: "h-64",
   },
   
@@ -44,7 +44,7 @@ const characterDesignItem: characterDesignItems[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "4pencil-utils1/ServicesImages/homes stealing.svg",
+    url: "4pencil-utils1/ServicesImages/stealing.svg",
     height: "h-64",
   },
   {
@@ -52,7 +52,7 @@ const characterDesignItem: characterDesignItems[] = [
     title: "Character Design",
     category: "2D Animation",
     type: "image",
-    url: "/4pencil-utils1/ServicesImages/pose 5 1.svg",
+    url: "4pencil-utils1/ServicesImages/pose31.svg",
     height: "h-64",
   },
   

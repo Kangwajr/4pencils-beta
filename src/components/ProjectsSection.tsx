@@ -6,38 +6,38 @@ import {
 
 const services = [
   {
-    url: "4pencil-utils1/IHOUSE/WILDLIFE AND CONSERVATION STORIES 1 1.svg",
+    url: "4pencil-utils1/IHOUSE/WILDLIFE.svg",
     title: "NIRAS INTERNATIONAL",
     description:
       "Safeguarding Posters for NIRAS International Designed visually engaging safeguarding posters for the Climate Justice Community (CJC), ensuring cultural relevance and accessibility. Incorporated feedback from NIRAS International staff and community representatives and translated materials into three main local languages.",
   },
   {
-    url: "4pencil-utils1/IHOUSE/CLIMATE CHANGE/environment_05 1 1.svg",
+    url: "4pencil-utils1/IHOUSE/CLIMATE CHANGE/environment.svg",
     title: "GiZ",
     description: "A magical journey through an enchanted forest, featuring hand-drawn characters and vibrant scenery. This project showcases our expertise in traditional animation techniques combined with modern digital tools. The story follows a young explorer discovering mythical creatures and ancient secrets hidden within the forest.",
   },
   {
-    url: "4pencil-utils1/IHOUSE/lop 1@2x 1.svg",
+    url: "4pencil-utils1/IHOUSE/lop1.svg",
     title: "Character Design",
     description: "Fluid motion and captivating animated sequences.",
   },
   {
-    url: "4pencil-utils1/ServicesImages/girls_final_.svg",
+    url: "4pencil-utils1/ILLUSTRA/4pencilsIllustrations/herokidsrich.svg",
     title: "Comics",
     description: "Sequential art that tells compelling stories frame by frame.",
   },
   {
-    url: "4pencil-utils1/IHOUSE/CLIMATE CHANGE/environment 1 1.svg",
+    url: "4pencil-utils1/IHOUSE/CLIMATE CHANGE/environment_05 .svg",
     title: "Illustrations",
     description: "Detailed illustrations for various media and purposes.",
   },
   {
-    url: "4pencil-utils1/IHOUSE/CLIMATE CHANGE/environment_01 1 1.svg",
+    url: "4pencil-utils1/IHOUSE/CLIMATE CHANGE/environment_03.svg",
     title: "Story books",
     description: "Enchanting visuals that bring stories to life.",
   },
   {
-    url: "4pencil-utils1/IHOUSE/CLIMATE CHANGE/environment_03 1 1.svg",
+    url: "4pencil-utils1/IHOUSE/CLIMATE CHANGE/environment_01.svg",
     title: "Story boards",
     description: "Enchanting visuals that bring stories to life.",
   },
