@@ -1,7 +1,13 @@
+
+
+
+
+
 const HeroVideo = () => {
   return (
     <>
-      <div className="absolute inset-0 z-[1] h-[1400px]" />      
+      <div className="absolute inset-0 z-[1] h-[1400px]" />  
+          
       <video
         autoPlay
         muted
