@@ -5,7 +5,7 @@ interface ServicesItemProps {
   id: number;
   title: string;
   type: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode; // Optional if not used
   url: string;
   galleryUrl: string;
   selected: number | null;
@@ -16,6 +16,7 @@ const ServicesItem = ({
   id,
   title,
   url,
+  galleryUrl,
   onSelect,
 }: ServicesItemProps) => {
   return (
@@ -32,7 +33,7 @@ const ServicesItem = ({
         <div className="absolute bottom-0 left-0 right-0 p-6 transform transition-transform duration-300 group-hover:translate-y-0">
           <div className="flex justify-center text-white">
             <Link
-              to="/gallery"
+              to={galleryUrl} // Navigate to the correct URL
               className="text-sky-500 text-2xl px-4 py-2 bg-[#FFD700] rounded-full backdrop-blur-sm hover:bg-white/30 transition-colors"
             >
               {title}

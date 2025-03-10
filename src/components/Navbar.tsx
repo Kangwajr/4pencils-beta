@@ -30,7 +30,7 @@ const services = [
   {
     name: "Comics & Story Books",
     icon: <BookOpen className="w-5 h-5" />,
-    path: "/comics-story-books",
+    path: "/comics",
   },
 ];
 
@@ -102,7 +102,7 @@ const Navbar = () => {
 
             {/* Centered Links */}
             <div className="flex items-center justify-center space-x-8">
-              {["Team", "Portfolio", "About", "Gallery", "Contact"].map(
+              {["Portfolio", "About", "Gallery", "Contact"].map(
                 (item) => (
                   <Link
                     key={item}
@@ -194,7 +194,7 @@ const Navbar = () => {
               </div>
             </div>
 
-            {["Team", "Portfolio", "About", "Gallery", "Contact"].map(
+            {["Portfolio", "About", "Gallery", "Contact"].map(
               (item) => (
                 <Link
                   key={item}

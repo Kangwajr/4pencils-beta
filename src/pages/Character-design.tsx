@@ -44,7 +44,7 @@ const characterDesignItem: characterDesignItems[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "4pencil-utils1/ServicesImages/stealing.svg",
+    url: "",
     height: "h-64",
   },
   {

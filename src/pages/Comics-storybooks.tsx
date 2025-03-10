@@ -18,7 +18,7 @@ const galleryItems: GalleryItem[] = [
     title: "Character Design",
     category: "2D Animation",
     type: "image",
-    url: "/projects/story-board.jpeg", // Updated to YouTube embed URL
+    url: "4pencil-utils1/comics/comic03.svg", // Updated to YouTube embed URL
     height: "h-64",
   },
   {
@@ -26,7 +26,7 @@ const galleryItems: GalleryItem[] = [
     title: "3D Animation Reel",
     category: "3D Animation",
     type: "image",
-    url: "/projects/story-book.jpeg",
+    url: "4pencil-utils1/comics/comic02.svg",
     height: "h-96",
   },
   {
@@ -34,7 +34,7 @@ const galleryItems: GalleryItem[] = [
     title: "Character Design",
     category: "2D Animation",
     type: "image",
-    url: "/4pencil-utils/page 4.jpg",
+    url: "4pencil-utils1/comics/coimic01.svg",
     height: "h-64",
   },
   // Add more gallery items...

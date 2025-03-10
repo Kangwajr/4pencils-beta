@@ -33,7 +33,7 @@ export const galleryItems = [
     id: 3,
     title: "comics/Story books",
     type: "image",
-    url: "4pencil-utils/page4.jpg",
-    galleryUrl: "/comics-storybook",
+    url: "4pencil-utils1/comics/comic12.svg",
+    galleryUrl: "/comics",
   },
 ];

@@ -17,8 +17,9 @@ const animationItems: animationItem[] = [
     id: 1,
     title: "Character Design",
     category: "2D Animation",
-    type: "image",
-    url: "4pencil-utils1/ServicesImages/pose 3 1.svg", // Updated to YouTube embed URL
+    type: "video",
+    url: "https://www.youtube.com/embed/ctEyIELC9UQ", // Updated to YouTube embed URL
+    thumbnail: "4pencil-utils1/Gallery/microbial1.svg",
     height: "h-64",
   },
   {
@@ -27,35 +28,20 @@ const animationItems: animationItem[] = [
     category: "",
     type: "video",
     url: "https://www.youtube.com/embed/O4ZzwJCNOAY",
-    thumbnail: "4pencil-utils1/ServicesImages/homes stealing.svg",
+    thumbnail: "4pencil-utils1/Gallery/maggies1.svg",
     height: "h-96",
   },
   {
     id: 3,
     title: "Character Design",
     category: "2D Animation",
-    type: "image",
-    url: "/4pencil-utils1/ServicesImages/homes stealing.svg",
+    type: "video",
+    url: "https://www.youtube.com/embed/O9U4IGB0v3k",
+    thumbnail: "4pencil-utils1/Gallery/med-search1.svg",
     height: "h-64",
   },
   
-  {
-    id: 3,
-    title: "",
-    category: "2D Animation",
-    type: "image",
-    url: "4pencil-utils1/ServicesImages/homes stealing.svg",
-    height: "h-64",
-  },
-  {
-    id: 4,
-    title: "Character Design",
-    category: "2D Animation",
-    type: "image",
-    url: "/4pencil-utils1/ServicesImages/pose 5 1.svg",
-    height: "h-64",
-  },
-  
+
   // Add more gallery items...
 ];
 

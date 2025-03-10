@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero/Hero";
-import OurGallery from "../components/ServicesPage";
-import ServicesPage from "../components/ProjectsSection";
+import Services from "../components/ServicesPage";
+import ProjectsPage from "../components/ProjectsSection";
 import Partners from "../components/Partners/Partners";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -12,8 +12,8 @@ const HomePage = () => {
     <div className="min-h-screen" style={{ fontFamily: "'', sans-serif" }}>
       <Navbar />
       <Hero />
-      <OurGallery />
-       <ServicesPage />
+      <Services />
+       <ProjectsPage />
       <Partners />
       <Contact />
       <Footer />

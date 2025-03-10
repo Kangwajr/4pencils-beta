@@ -128,7 +128,7 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D animation",
     type: "image",
-    url: "4pencil-utils1/ILLUSTRA/191.svg",
+    url: "",
     height: "h-96",
   },
   {
@@ -136,7 +136,7 @@ const galleryItems: GalleryItem[] = [
     title: "3D Character",
     category: "",
     type: "image",
-    url: "4pencil-utils1/3D-REN/renders/pose2.svg",
+    url: "",
     height: "h-96",
   },
   {
