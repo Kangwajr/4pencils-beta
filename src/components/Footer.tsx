@@ -11,7 +11,7 @@ const Footer = () => {
       backgroundSize: "cover", // Makes the image cover the entire background
     }}>
      
-      <div className="container mx-auto px-4 bg-black/90" >
+      <div className="container mx-auto px-10 bg-black/90" >
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h4 className="text-4xl font-semibold mb-4 text-sky-500 hover:text-sky-400 transition-colors">Services</h4>
