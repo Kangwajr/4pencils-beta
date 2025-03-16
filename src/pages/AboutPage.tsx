@@ -2,6 +2,7 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { Palette, Users, Target, Lightbulb, Award, Heart } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import ImageCarousel3D from '../components/AboutUsCarousel';
 
 const AboutPage = () => {
 
@@ -112,9 +113,9 @@ const AboutPage = () => {
       </section>
 
       {/* Values Section */}
-      <section className="relative py-20">
+      <section className="relative py-20 bg-black/35">
         <img
-          src="4pencil-utils1/4pencilsIllustrations/herokidsrich.svg"
+          src="4pencil-utils1/ILLUSTRA/4pencilsIllustrations/herokidsrich.svg"
           alt="Background"
           className="absolute inset-0 w-full h-[950px] bg-center  object-cover opacity-90"
         />
@@ -139,38 +140,11 @@ const AboutPage = () => {
       </section>
 
       {/* Location Section */}
-      <section className="relative py-40" style={{
-      backgroundImage: "url('/4pencil-utils1/3D-REN/renders/JAMES0.svg')"
+      <section className="relative py-20 bg-center bg-cover h-full" style={{
+      backgroundImage: "url('4pencil-utils1/3D-REN/girlAlone.svg')",
     }}>
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-6xl font-bold text-white mb-4">
-              Visit Our Studio
-            </h2>
-            <p className="text-[#FFD700] text-3xl">
-              Salama Park cucumber cl st Plot No. 11, Lusaka Zambia.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 mt-12 ">
-            
-            <div className="border border-gray-800 p-6 rounded-xl text-center bg-black/20">
-              <h3 className="text-4xl font-semibold text-sky-500 mb-2">
-                Address
-              </h3>
-              <p className="text-[#FFD700] text-3xl">
-                Salama Park cucumber cl st Plot No. 11, Lusaka, Zambia
-              </p>
-            </div>
-            <div className="border border-gray-800 p-6 rounded-xl text-center  bg-black/20">
-              <h3 className="text-4xl font-semibold text-sky-500 mb-2">Email</h3>
-              <p className="text-[#FFD700] text-3xl">4pencilsanims@gmail.com</p>
-            </div>
-            <div className="border border-gray-800 p-6 rounded-xl text-center  bg-black/20">
-              <h3 className="text-4xl font-semibold text-sky-500 mb-2">Phone</h3>
-              <p className="text-[#FFD700] text-3xl">+260976659962</p>
-            </div>
-          </div>
-        </div>
+        <ImageCarousel3D />
+        
       </section>
     </div>
   );

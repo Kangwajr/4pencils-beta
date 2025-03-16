@@ -37,6 +37,166 @@ const galleryItems: GalleryItem[] = [
     url: "4pencil-utils1/comics/coimic01.svg",
     height: "h-64",
   },
+  {
+    id: 4,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic04.svg",
+    height: "h-64",
+  },
+  {
+    id: 5,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic05.svg",
+    height: "h-64",
+  },
+  {
+    id: 6,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic06.svg",
+    height: "h-64",
+  },
+  {
+    id: 7,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic001.svg",
+    height: "h-64",
+  },
+  {
+    id: 8,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic002.svg",
+    height: "h-64",
+  },
+  {
+    id: 9,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic003.svg",
+    height: "h-64",
+  },
+  {
+    id: 10,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/storyboard1.svg",
+    height: "h-64",
+  },
+  {
+    id: 10,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/storyboard001.svg",
+    height: "h-64",
+  },
+  {
+    id: 10,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/storyboard2.svg",
+    height: "h-64",
+  },
+  {
+    id: 10,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic08.svg",
+    height: "h-64",
+  },
+  {
+    id: 10,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic09.svg",
+    height: "h-64",
+  },
+  {
+    id: 10,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic10.svg",
+    height: "h-64",
+  },
+  {
+    id: 10,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic11.svg",
+    height: "h-64",
+  },
+  {
+    id: 10,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic12.svg",
+    height: "h-64",
+  },
+  {
+    id: 10,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic13.svg",
+    height: "h-64",
+  },
+  {
+    id: 10,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic14.svg",
+    height: "h-64",
+  },
+  {
+    id: 10,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic15.svg",
+    height: "h-64",
+  },
+  {
+    id: 10,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic16.svg",
+    height: "h-64",
+  },
+  {
+    id: 10,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "4pencil-utils1/comics/comic17.svg",
+    height: "h-64",
+  },
+  {
+    id: 10,
+    title: "Character Design",
+    category: "2D Animation",
+    type: "image",
+    url: "",
+    height: "h-64",
+  },
   // Add more gallery items...
 ];
 
@@ -52,9 +212,9 @@ const comics: React.FC = () => {
 
   return (
     <>
-      <div className="min-h-screen py-24 bg-black px-4 sm:px-6 lg:px-8" style={{ fontFamily: "'', sans-serif" }}>
+      <div className="min-h-screen py-24 bg-black px-4 sm:px-6 lg:px-8" style={{ fontFamily: "'', sans-serif", backgroundImage: "url('4pencil-utils1/comics/comic06.svg')" }}>
         <Navbar />
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center bg-black/90">
           <h2 className="text-6xl font-bold text-sky-500 ">
             Comics and Story Books
           </h2>
@@ -86,10 +246,10 @@ const comics: React.FC = () => {
                     />
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-0 left-0 right-0 p-4 text-sky-500">
+                    {/* <div className="absolute bottom-0 left-0 right-0 p-4 text-sky-500">
                       <h3 className="text-xl font-semibold">{item.title}</h3>
                       <p className="mt-1 text-sm text-[#FFD700]">{item.category}</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               ))}
@@ -107,7 +267,7 @@ const comics: React.FC = () => {
         >
           <div className="flex items-center justify-center min-h-screen">
             <div className="bg-black rounded-lg text-white p-6 max-w-3xl w-full">
-              <h3 className="text-2xl text-sky-500 mb-4">{selectedItem.title}</h3>
+              {/* <h3 className="text-2xl text-sky-500 mb-4">{selectedItem.title}</h3> */}
               <div className="aspect-video">
                 {selectedItem.type === "video" && isYouTubeVideo(selectedItem.url) ? (
                   <iframe

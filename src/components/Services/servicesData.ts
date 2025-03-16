@@ -20,7 +20,7 @@ export const galleryItems = [
     title: "Illustration",
     type: "image",
     url: "/projects/illustration1.jpeg",
-    galleryUrl: "/illustration",
+    galleryUrl: "/Illustrations",
   },
   {
     id: 2,

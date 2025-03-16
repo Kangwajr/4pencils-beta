@@ -24,13 +24,13 @@ const animationItems: animationItem[] = [
   },
   {
     id: 2,
-    title: "2D Animation Reel",
-    category: "",
+    title: "3D Animation Showcase",
+    category: "3D Animation",
     type: "video",
-    url: "https://www.youtube.com/embed/O4ZzwJCNOAY",
-    thumbnail: "4pencil-utils1/Gallery/maggies1.svg",
+    url: "https://www.youtube.com/embed/ilGDshaUzwQ",
+    thumbnail: "4pencil-utils1/thumbnails/lindiwe.svg",
     height: "h-96",
-  },
+},
   {
     id: 3,
     title: "Character Design",
@@ -40,7 +40,42 @@ const animationItems: animationItem[] = [
     thumbnail: "4pencil-utils1/Gallery/med-search1.svg",
     height: "h-64",
   },
-  
+  {
+    id: 4,
+    title: "3D Animation Showcase",
+    category: "3D Animation",
+    type: "video",
+    url: "https://www.youtube.com/embed/r5WBf12Qkpc",
+    thumbnail: "4pencil-utils1/thumbnails/Pos-systems.svg",
+    height: "h-96",
+},
+{
+  id: 5,
+  title: "3D Animation Showcase",
+  category: "3D Animation",
+  type: "video",
+  url: "https://www.youtube.com/embed/2-q7L4oSy8k",
+  thumbnail: "4pencil-utils1/thumbnails/Support-services.svg",
+  height: "h-96",
+},
+{
+  id: 6,
+  title: "",
+  category: "3D Animation",
+  type: "video",
+  url: "https://www.youtube.com/embed/dcT9DMi5FCU",
+  thumbnail: "4pencil-utils1/thumbnails/guy001.svg",
+  height: "h-96",
+},
+{
+  id: 7,
+  title: "",
+  category: "3D Animation",
+  type: "video",
+  url: "https://www.youtube.com/embed/ee8iDZy2Yjk",
+  thumbnail: "/4pencil-utils1/ServicesImages/guy0.svg",
+  height: "h-96",
+},
 
   // Add more gallery items...
 ];
@@ -54,9 +89,10 @@ const animation: React.FC = () => {
 
   return (
     <>
-      <div className="min-h-screen py-24 bg-black px-4 sm:px-6 lg:px-8" style={{ fontFamily: "'', sans-serif" }}>
+   
+      <div className="min-h-screen bg-black px-4 sm:px-6 lg:px-8" style={{ fontFamily: "'', sans-serif", backgroundImage: "url('4pencil-utils1/3D-REN/girlAlone.svg')", }}>
         <Navbar />
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center bg-black/90">
           <h2 className="text-6xl font-bold text-sky-500">
             Our 2D/3D Animations
           </h2>
@@ -88,10 +124,10 @@ const animation: React.FC = () => {
                     />
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-0 left-0 right-0 p-4 text-sky-500">
+                    {/* <div className="absolute bottom-0 left-0 right-0 p-4 text-sky-500">
                       <h3 className="text-xl font-semibold">{item.title}</h3>
                       <p className="mt-1 text-sm text-[#FFD700]">{item.category}</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               ))}
@@ -109,7 +145,7 @@ const animation: React.FC = () => {
         >
           <div className="flex items-center justify-center min-h-screen">
             <div className="bg-black rounded-lg text-white p-6 max-w-3xl w-full">
-              <h3 className="text-2xl text-sky-500 mb-4">{selectedItem.title}</h3>
+              {/* <h3 className="text-2xl text-sky-500 mb-4">{selectedItem.title}</h3> */}
               <div className="aspect-video">
                 {selectedItem.type === "video" ? (
                   <iframe

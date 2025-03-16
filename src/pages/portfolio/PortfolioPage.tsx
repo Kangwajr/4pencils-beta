@@ -6,7 +6,7 @@ import Navbar from "../../components/Navbar";
 const projects = [
   {
     title: "GIZ",
-    image: "/4pencil-utils1/ILLUSTRA/GIZ 1.svg",
+    image: "/4pencil-utils1/ILLUSTRA/GIZ.svg",
     rating: 4.9,
     reviews: 128,
     description:
@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: "ACTIONAID",
-    image: "4pencil-utils1/ILLUSTRA/ACTIONAID 1.svg",
+    image: "4pencil-utils1/ILLUSTRA/ACTIONAID1.svg",
     rating: 4.7,
     reviews: 156,
     description:
@@ -30,7 +30,7 @@ const projects = [
   },
   {
     title: "Leonard Cheshire Disability",
-    image: "4pencil-utils1/ILLUSTRA/cheshire homes 1.svg",
+    image: "4pencil-utils1/ILLUSTRA/cheshirehomes1.svg",
     rating: 5.0,
     reviews: 73,
     description:

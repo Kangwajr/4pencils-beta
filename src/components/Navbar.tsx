@@ -46,13 +46,13 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <nav className="fixed top-0 w-full z-50 font-semibold text-2xl">
-      <div className="container mx-auto px-4">
+    <nav className="fixed top-0 w-full z-50 font-semibold text-2xl bg-black ">
+      <div className="container mx-auto">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
              <Link
-              to="/">
+              to="/"> 
             <img
               src="/4pencil-utils1/logos/4pencils_Final.svg"
               alt="Logo"

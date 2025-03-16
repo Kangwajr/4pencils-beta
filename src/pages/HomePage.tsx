@@ -6,11 +6,13 @@ import ProjectsPage from "../components/ProjectsSection";
 import Partners from "../components/Partners/Partners";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import SocialIcons from '../components/SocialIcons';
 
 const HomePage = () => {
   return (
     <div className="min-h-screen" style={{ fontFamily: "'', sans-serif" }}>
       <Navbar />
+      <SocialIcons />
       <Hero />
       <Services />
        <ProjectsPage />

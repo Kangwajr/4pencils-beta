@@ -14,19 +14,11 @@ interface GalleryItem {
 
 const galleryItems: GalleryItem[] = [
   {
-    id: 1,
+    id: 2,
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "4pencil-utils1/illustrations/ill.svg", 
-    height: "h-64",
-  },
-  {
-    id: 2,
-    title: "",
-    category: "3D Animation",
-    type: "image",
-    url: "4pencil-utils1/ILLUSTRA/6 4905.svg",
+    url: "4pencil-utils1/ILLUSTRA/immigration01.svg",
     height: "h-96",
   },
   {
@@ -34,7 +26,7 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "4pencil-utils1/ILLUSTRA/9 51.svg",
+    url: "4pencil-utils1/ILLUSTRA/mobilemoney.svg",
     height: "h-64",
   },
   {
@@ -42,7 +34,7 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "4pencil-utils1/ILLUSTRA/26 1.svg",
+    url: "4pencil-utils1/ILLUSTRA/2birds.svg",
     height: "h-64",
   },
   {
@@ -50,7 +42,7 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "4pencil-utils1/ILLUSTRA/24 1.svg",
+    url: "4pencil-utils1/ILLUSTRA/visacard.svg",
     height: "h-64",
   },
   {
@@ -58,7 +50,7 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "4pencil-utils1/ILLUSTRA/20 2.svg",
+    url: "4pencil-utils1/ILLUSTRA/fertilizer.svg",
     height: "h-64",
   },
   {
@@ -66,7 +58,7 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "4pencil-utils1/ILLUSTRA/18 512346.svg",
+    url: "4pencil-utils1/ILLUSTRA/Illustration001.svg",
     height: "h-64",
   },
   {
@@ -74,7 +66,7 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "4pencil-utils1/ILLUSTRA/10 1.svg",
+    url: "4pencil-utils1/ILLUSTRA/Illustration002.svg",
     height: "h-64",
   },
   {
@@ -82,7 +74,7 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "4pencil-utils1/ILLUSTRA/4 3.svg",
+    url: "4pencil-utils1/ILLUSTRA/Illustration003.svg",
     height: "h-64",
   },
   {
@@ -90,7 +82,7 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "4pencil-utils1/ILLUSTRA/25 1.svg",
+    url: "4pencil-utils1/ILLUSTRA/Illustration004.svg",
     height: "h-64",
   },
   {
@@ -98,7 +90,7 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "",
+    url: "4pencil-utils1/ILLUSTRA/Illustration005.svg",
     height: "h-64",
   },
   {
@@ -106,11 +98,9 @@ const galleryItems: GalleryItem[] = [
     title: "",
     category: "2D Animation",
     type: "image",
-    url: "",
+    url: "4pencil-utils1/ILLUSTRA/Illustration006.svg",
     height: "h-64",
   },
-
-  
   // Add more gallery items...
 ];
 
@@ -125,9 +115,9 @@ const illustration: React.FC = () => {
 
   return (
     <>
-      <div className="min-h-screen py-24 bg-black px-4 sm:px-6 lg:px-8" style={{ fontFamily: "'', sans-serif" }}>
+      <div className="min-h-screen py-24 bg-black px-4 sm:px-6 lg:px-8" style={{ fontFamily: "'', sans-serif", backgroundImage: "url('4pencil-utils1/IHOUSE/WILDLIFE.svg')", }}>
         <Navbar />
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center bg-black/90">
           <h2 className="text-6xl font-bold text-sky-500 ">
             Our Illustrations
           </h2>
@@ -159,10 +149,10 @@ const illustration: React.FC = () => {
                     />
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-0 left-0 right-0 p-4 text-sky-500">
+                    {/* <div className="absolute bottom-0 left-0 right-0 p-4 text-sky-500">
                       <h3 className="text-xl font-semibold">{item.title}</h3>
                       <p className="mt-1 text-sm text-[#FFD700]">{item.category}</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               ))}

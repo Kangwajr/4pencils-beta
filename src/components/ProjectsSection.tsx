@@ -1,125 +1,134 @@
-import React, { useState, useEffect, useMemo } from "react";
-import { Suspense } from "react";
+import React, { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const ChevronLeft = React.lazy(() =>
-  import("lucide-react").then((mod) => ({ default: mod.ChevronLeft }))
-);
-const ChevronRight = React.lazy(() =>
-  import("lucide-react").then((mod) => ({ default: mod.ChevronRight }))
-);
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+}
 
-const services = [
+const projects: Project[] = [
   {
-    url: "4pencil-utils1/IHOUSE/WILDLIFE.svg",
-    title: "NIRAS INTERNATIONAL",
-    description:
-      "Safeguarding Posters for NIRAS International Designed visually engaging safeguarding posters for the Climate Justice Community (CJC), ensuring cultural relevance and accessibility. Incorporated feedback from NIRAS International staff and community representatives and translated materials into three main local languages.",
+    id: 1,
+    title: "E-Commerce Platform",
+    description: "A modern e-commerce solution with real-time inventory management",
+    image: "4pencil-utils1/IHOUSE/WILDLIFE.svg",
   },
   {
-    url: "4pencil-utils1/IHOUSE/CLIMATE CHANGE/environment.svg",
-    title: "GiZ",
-    description:
-      "A magical journey through an enchanted forest, featuring hand-drawn characters and vibrant scenery. This project showcases our expertise in traditional animation techniques combined with modern digital tools. The story follows a young explorer discovering mythical creatures and ancient secrets hidden within the forest.",
+    id: 2,
+    title: "Health & Wellness App",
+    description: "Mobile-first application for tracking fitness and nutrition goals",
+    image: "4pencil-utils1/IHOUSE/ClimateChange/environment.svg",
   },
   {
-    url: "4pencil-utils1/IHOUSE/lop1.svg",
-    title: "Character Design",
-    description: "Fluid motion and captivating animated sequences.",
+    id: 3,
+    title: "Smart Home Dashboard",
+    description: "IoT control center for managing connected home devices",
+    image: "4pencil-utils1/IHOUSE/lop1.svg",
   },
   {
-    url: "4pencil-utils1/ILLUSTRA/4pencilsIllustrations/herokidsrich.svg",
+    id: 4,
     title: "Comics",
     description: "Sequential art that tells compelling stories frame by frame.",
+    image: "4pencil-utils1/ILLUSTRA/4pencilsIllustrations/herokidsrich.svg",
   },
   {
-    url: "4pencil-utils1/IHOUSE/CLIMATE CHANGE/environment_05 .svg",
+    id: 5,
     title: "Illustrations",
     description: "Detailed illustrations for various media and purposes.",
+    image: "4pencil-utils1/IHOUSE/ClimateChange/environment_05 .svg",
   },
   {
-    url: "4pencil-utils1/IHOUSE/CLIMATE CHANGE/environment_03.svg",
-    title: "Story books",
+    id: 6,
+    title: "Story Books",
     description: "Enchanting visuals that bring stories to life.",
+    image: "4pencil-utils1/IHOUSE/ClimateChange/environment_03.svg",
   },
   {
-    url: "4pencil-utils1/IHOUSE/CLIMATE CHANGE/environment_01.svg",
-    title: "Story boards",
+    id: 7,
+    title: "Story Boards",
     description: "Enchanting visuals that bring stories to life.",
+    image: "4pencil-utils1/IHOUSE/ClimateChange/environment_01.svg",
   },
 ];
 
-function ServiceSection() {
-  const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Preload next and previous images
+const ProjectCarousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set());
+  const [direction, setDirection] = useState<'left' | 'right' | null>(null);
+
   useEffect(() => {
-    const nextIndex = (currentSlide + 1) % services.length;
-    const prevIndex = (currentSlide - 1 + services.length) % services.length;
-
-    const preloadNext = new Image();
-    const preloadPrev = new Image();
-    preloadNext.src = services[nextIndex].url;
-    preloadPrev.src = services[prevIndex].url;
-  }, [currentSlide]);
+    // Preload images
+    projects.forEach(project => {
+      const img = new Image();
+      img.src = project.image;
+      img.onload = () => {
+        setLoadedImages(prev => new Set(prev).add(project.image));
+      };
+    });
+  }, []);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % services.length);
+    setDirection('right');
+    setCurrentIndex(prevIndex => 
+      prevIndex === projects.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + services.length) % services.length);
+    setDirection('left');
+    setCurrentIndex(prevIndex => 
+      prevIndex === 0 ? projects.length - 1 : prevIndex - 1
+    );
   };
 
-  const serviceDots = useMemo(
-    () =>
-      services.map((_, index) => (
-        <button
-          key={index}
-          onClick={() => setCurrentSlide(index)}
-          className={`w-3 h-3 rounded-full transition-all ${
-            currentSlide === index ? "bg-sky-500 w-6" : "bg-[#FFD700]"
-          }`}
-        />
-      )),
-    [services, currentSlide]
-  );
+  const isImageLoaded = (image: string) => loadedImages.has(image);
+  const currentProject = projects[currentIndex];
 
   return (
-    <section className="bg-black py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-6xl font-bold mb-4 text-center text-sky-500">
-          In House Projects
-        </h2>
-        <div className="relative">
-          <div className="overflow-hidden rounded-2xl">
-            <div className="relative w-50 h-50">
-              <img
-                src={services[currentSlide].url}
-                alt={services[currentSlide].title}
-                className="w-full object-cover img-transition"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <Suspense fallback={<div>Loading...</div>}>
-            <button
-              onClick={prevSlide}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-[#FFD700] hover:bg-white text-sky-500 p-2 rounded-full shadow-lg transition-all"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-[#FFD700] hover:bg-white text-sky-500 p-2 rounded-full shadow-lg transition-all"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
-          </Suspense>
-          <div className="flex justify-center mt-4 space-x-2">{serviceDots}</div>
-        </div>
-      </div>
-    </section>
-  );
-}
+    <div className="w-full h-full bg-black">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFD700] py-10 text-center">
+        In-House Projects
+      </h1>
+      <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
+        <div 
+          key={currentProject.id}
+          className={`absolute inset-0 w-full h-full transition-transform duration-700 ease-in-out ${
+            direction === 'right' ? 'animate-slideLeft' : 
+            direction === 'left' ? 'animate-slideRight' : ''
+          }`}
+        >
+          <div className="relative h-full w-full rounded-2xl overflow-hidden shadow-2xl">
+            <div 
+              className={`absolute inset-0 bg-cover bg-center transition-opacity duration-300 ${
+                isImageLoaded(currentProject.image) ? 'opacity-100' : 'opacity-0'
+              }`}
+              style={{ backgroundImage: `url(${currentProject.image})` }}
+            />
 
-export default ServiceSection;
+            {!isImageLoaded(currentProject.image) && (
+              <div className="absolute inset-0 bg-gray-800 animate-pulse" />
+            )}
+          </div>
+        </div>
+
+        <button
+          onClick={prevSlide}
+          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 p-2 md:p-3 rounded-full bg-[#FFD700] backdrop-blur-sm hover:bg-white/50 transition-colors z-10"
+        >
+          <ChevronLeft className="w-4 h-4 md:w-6 md:h-6 text-sky-500" />
+        </button>
+        <button
+          onClick={nextSlide}
+          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 p-2 md:p-3 rounded-full bg-[#FFD700] backdrop-blur-sm hover:bg-white/50 transition-colors z-10"
+        >
+          <ChevronRight className="w-4 h-4 md:w-6 md:h-6 text-sky-500" />
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectCarousel;
