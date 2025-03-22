@@ -515,7 +515,7 @@ const galleryItems: GalleryItem[] = [
       title: "Character Design",
       category: "2D Animation",
       type: "image",
-      url: "4pencil-utils1/IHOUSE/ClimateChange/environment_05 .svg",
+      url: "4pencil-utils1/IHOUSE/ClimateChange/environment_05.svg",
       height: "h-64",
     },
     {

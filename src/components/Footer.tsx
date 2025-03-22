@@ -13,7 +13,7 @@ const Footer = () => {
      
       <div className="container mx-auto px-10 bg-black/90" >
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
+          <div className="py-6">
             <h4 className="text-4xl font-semibold mb-4 text-sky-500 hover:text-sky-400 transition-colors">Services</h4>
             <ul className="space-y-2 text-[#FFD700]">
               <Link to="/animation" className="hover:text-sky-400 transition-colors">
@@ -31,7 +31,8 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="text-4xl font-semibold mb-4 text-sky-500 hover:text-sky-400 transition-colors">Company</h4>
+            <div className="py-6">
+              <h4 className="text-4xl font-semibold mb-4 text-sky-500 hover:text-sky-400 transition-colors">Company</h4>
             <ul className="space-y-2 text-[#FFD700]">
               <Link to="/about" className="hover:text-sky-400 transition-colors">
                 <li>About Us</li>
@@ -46,8 +47,10 @@ const Footer = () => {
                 <li>Contact</li>
               </Link>
             </ul>
+            </div>
+            
           </div>
-          <div>
+          <div className="py-6">
             <h4 className="text-4xl font-semibold mb-4 text-sky-500 hover:text-sky-400 transition-colors">Newsletter</h4>
             <p className="text-[#FFD700] mb-4">
               Subscribe to our newsletter for updates and art tips.
@@ -67,7 +70,7 @@ const Footer = () => {
         <div className="border-t border-gray-900/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-[#FFD700]">© 2024 4pencils. All rights reserved.</p>
-            <div className="flex space-x-4 mt-4 md:mt-0">
+            <div className="flex space-x-4 mt-4 md:mt-0 pb-10">
               <Link to="https://www.facebook.com/NukecreativeSpace" target="_blank" rel="noopener noreferrer">
               <Facebook className="h-7 w-7 text-sky-500 hover:text-sky-400 cursor-pointer transition-colors" />
               </Link>
