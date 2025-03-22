@@ -7,7 +7,7 @@ interface CarouselImage {
 }
 
 const images: CarouselImage[] = [
-  { url: "4pencil-utils1/3D-REN/chi3.svg", title: "Collaborative Space" },
+  { url: "4pencil-utils1/IHOUSE/ClimateChange/environment_05.svg", title: "Collaborative Space" },
   { url: "4pencil-utils1/3D-REN/girlAlone2.svg", title: "Tech Hub" },
   { url: "studio2.jpeg", title: "Team Space" },
   { url: "studio1.jpeg", title: "Animation Studio" },

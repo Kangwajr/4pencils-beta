@@ -14,7 +14,7 @@ const projects: Project[] = [
     id: 1,
     title: "E-Commerce Platform",
     description: "A modern e-commerce solution with real-time inventory management",
-    image: " 4pencil-utils1/IHOUSE/ClimateChange/environment_05.svg",
+    image: "4pencil-utils1/IHOUSE/ClimateChange/environment_05.svg",
   },
   {
     id: 1,

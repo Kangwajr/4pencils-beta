@@ -52,7 +52,7 @@ const projects = [
   },
   {
     title: "Catholic Relief Services",
-    image: "4pencil-utils1/ILLUSTRA/119.svg",
+    image: "/4pencil-utils1/ILLUSTRA/Illustration0010.svg",
     rating: 5.0,
     reviews: 73,
     description: "we had the privilege of transforming the CIF+ Learning Brief, Job Aid, and Pocket Guide through strategic graphic design and illustration, enhancing visual appeal and user accessibility.",
