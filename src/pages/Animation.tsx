@@ -90,7 +90,7 @@ const animation: React.FC = () => {
   return (
     <>
    
-      <div className="min-h-screen bg-black px-24 sm:px-6 lg:px-8" style={{ fontFamily: "'', sans-serif", backgroundImage: "url('4pencil-utils1/3D-REN/girlAlone.svg')", }}>
+      <div className="min-h-screen py-24 bg-black px-4 sm:px-6 lg:px-8" style={{ fontFamily: "'', sans-serif", backgroundImage: "url('4pencil-utils1/3D-REN/girlAlone.svg')", }}>
         <Navbar />
         <div className="max-w-7xl mx-auto text-center bg-black/90">
           <h2 className="text-6xl font-bold text-sky-500">
